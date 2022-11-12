@@ -2,3 +2,34 @@ $primary: #2F6690;
 $primary-darken-1: #16425B;
 $secondary: #81C3D7;
 $secondary-darken-1: #3A7CA5;
+
+body {
+    max-width: 1920px;
+    min-width: 360px
+}
+
+p {
+    color: $primary-darken-1;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+h2 {
+    color: $secondary-darken-1;
+    margin-bottom: 15px;
+}
+
+ul,
+ol {
+    padding-left: 40px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+figcaption{
+    color: $primary-darken-1;
+    font-size: 20px;
+}

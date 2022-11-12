@@ -15,12 +15,21 @@
             官方給出的圖樣資料尺寸都會在(640, 480)或是(480, 640)之中(橫著拍 或是直著拍的蘭花)，由於模型的輸入 size 是固定的，所以我使用 padding 的 方法來填充空出來的部分，填充部分使用 0
             可以避免
             model 被 padding 的部分 影響。另外，所有的 data 在進入神經網路前都會做歸一化，使網路在計算 feature 間的 distanse 時能夠進一步收斂。
+        <figure>
+            <img src="@/assets/imgs/data_preprocess.png" class="mx-auto">
+            <figcaption class="text-center">Data preprocessing過程</figcaption>
+        </figure>
         </p>
+
         <h3 class="text-h3 mb-2">Support set的準備方式:</h3>
         <p>
             假設選擇的預處理模型 p_model(include_top=False，若輸出維度不等於 1，則添加flatten)之輸出shape為(None, p_X)，我們可以將官方提供的219 shots 10
             way的training dataset先通過我們選擇的預處理模型得到219*10 個shape為(None, p_X)的特徵向量，接著我們為每一類的10個特徵向量取平
             均值並做合理的歸一化與標準化，最後將此值作為此分類的標誌性特徵向量， 並對所有類別做同樣的運算，得到support set(shape=(219, p_x))
+        <figure>
+            <img src="@/assets/imgs/dataset_resize.png" class="mx-auto">
+            <figcaption class="text-center">Data resize過程</figcaption>
+        </figure>
         </p>
         <h3 class="text-h3 mb-2">Fine-tuning 方法:</h3>
         <p>
@@ -36,6 +45,10 @@
             ac提升 了3至5%，但這邊有個小錯誤在我的專案中，我先提取support set的 feature vector後才做這個預訓練來調整特徵提取層的權重，導致這個 feature
             vector所經過的網路與開始fine-tuning的網路是不同權重的，所以 造成網路在 fine-tuning 時要重新尋找最低點，失去了初始化的意義，也許在
             比賽前有注意到這個小錯誤會使模型表現更進一步提升也說不定。
+        <figure>
+            <img src="@/assets/imgs/pretrain_train.png" class="mx-auto">
+            <figcaption class="text-center">pretraining跟training過程</figcaption>
+        </figure>
         </p>
         <h3 class="text-h3 mb-2">Data genorate:</h3>
         <p>
@@ -44,3 +57,7 @@
         </p>
     </section>
 </template>
+
+<style lang="scss">
+
+</style>
