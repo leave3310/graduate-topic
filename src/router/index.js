@@ -1,11 +1,11 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Index from '@/view/index.vue'
 import Introduce from '@/view/Introduce.vue'
 import Environment from '@/view/Environment.vue'
 import ModelChoice from '@/view/ModelChoice.vue'
 import ModelStructure from '@/view/ModelStructure.vue'
 import UnComplete from '@/view/UnComplete.vue'
-let history = createWebHistory()
+
 let routes = [
   {
     path: '/',
@@ -39,4 +39,11 @@ let routes = [
   }
 ]
 
-export default createRouter({ history, routes }) 
+export default createRouter({
+  history: createWebHashHistory(),
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    // always scroll to top
+    return { top: 0 }
+  }
+}) 
