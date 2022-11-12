@@ -4,7 +4,7 @@ import Introduce from '@/view/Introduce.vue'
 import Environment from '@/view/Environment.vue'
 import ModelChoice from '@/view/ModelChoice.vue'
 import ModelStructure from '@/view/ModelStructure.vue'
-
+import UnComplete from '@/view/UnComplete.vue'
 let history = createWebHistory()
 let routes = [
   {
@@ -31,6 +31,11 @@ let routes = [
     path: '/modelStructure',
     name: 'modelStructure',
     component: ModelStructure
+  },
+  {
+    path: '/unComplete',
+    name: 'unComplete',
+    component: UnComplete
   }
 ]
 

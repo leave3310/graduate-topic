@@ -44,13 +44,11 @@
 </template>
 
 <style lang="scss">
-.Environment {
-    h3 {
-        color: $primary;
-    }
+// h3 {
+//     color: $primary;
+// }
 
-    h4 {
-        color: $primary-darken-1;
-    }
-}
+// h4 {
+//     color: $primary-darken-1;
+// }
 </style>

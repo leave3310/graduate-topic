@@ -2,11 +2,14 @@
   "name": "graduate-topic",
   "version": "0.0.0",
   "private": true,
+  "homepage":"https://leave3310.github.io/graduate-topic",
   "scripts": {
     "serve": "vite preview",
     "build": "vite build",
     "dev": "vite",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
@@ -18,6 +21,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.2.0",
+    "gh-pages": "^4.0.0",
     "sass": "^1.55.0",
     "vite": "^3.2.0",
     "vite-plugin-vuetify": "^1.0.0-alpha.12",
