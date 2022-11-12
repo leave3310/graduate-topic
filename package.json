@@ -2,14 +2,11 @@
   "name": "graduate-topic",
   "version": "0.0.0",
   "private": true,
-  "homepage":"https://leave3310.github.io/graduate-topic",
   "scripts": {
     "serve": "vite preview",
     "build": "vite build",
     "dev": "vite",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
