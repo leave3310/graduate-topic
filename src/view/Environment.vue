@@ -43,12 +43,3 @@
     </section>
 </template>
 
-<style lang="scss">
-// h3 {
-//     color: $primary;
-// }
-
-// h4 {
-//     color: $primary-darken-1;
-// }
-</style>

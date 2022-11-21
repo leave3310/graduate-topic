@@ -11,11 +11,14 @@
     </v-app-bar>
     <v-navigation-drawer v-model="isOpenDrawer" temporary>
         <v-list density="compact" nav>
-            <v-list-item to="/introduce" prepend-icon="mdi-view-dashboard" title="競賽說明" value="競賽說明"></v-list-item>
+            <v-list-item to="/motivation" prepend-icon="mdi-view-dashboard" title="研究動機" value="研究動機"></v-list-item>
+            <v-list-item to="/purpose" prepend-icon="mdi-view-dashboard" title="研究目的" value="研究目的"></v-list-item>
+            <v-list-item to="/content" prepend-icon="mdi-view-dashboard" title="研究內容" value="研究內容"></v-list-item>
+            <!-- <v-list-item to="/introduce" prepend-icon="mdi-view-dashboard" title="競賽說明" value="競賽說明"></v-list-item>
             <v-list-item to="/environment" prepend-icon="mdi-cellphone-link" title="使用環境" value="使用環境"></v-list-item>
             <v-list-item to="/modelChoice" prepend-icon="mdi-database-edit-outline" title="模型選擇" value="模型選擇"></v-list-item>
             <v-list-item to="/modelStructure" prepend-icon="mdi-feature-search-outline" title="模型架構" value="模型架構"></v-list-item>
-            <v-list-item to="/unComplete" prepend-icon="mdi-clipboard-list-outline" title="未完成的優化" value="未完成的優化"></v-list-item>
+            <v-list-item to="/unComplete" prepend-icon="mdi-clipboard-list-outline" title="未完成的優化" value="未完成的優化"></v-list-item> -->
         </v-list>
     </v-navigation-drawer>
 </template>

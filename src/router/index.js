@@ -6,11 +6,30 @@ import ModelChoice from '@/view/ModelChoice.vue'
 import ModelStructure from '@/view/ModelStructure.vue'
 import UnComplete from '@/view/UnComplete.vue'
 
+import Motivation from '@/view/Motivation.vue';
+import Purpose from '@/view/Purpose.vue'
+import Content from '@/view/Content.vue'
+
 let routes = [
   {
     path: '/',
     name: 'home',
     component: Index
+  },
+  {
+    path: '/motivation',
+    name: 'motivation',
+    component: Motivation
+  },
+  {
+    path: '/purpose',
+    name: 'purpose',
+    component: Purpose
+  },
+  {
+    path: '/content',
+    name: 'content',
+    component: Content
   },
   {
     path: '/introduce',
