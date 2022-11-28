@@ -1,31 +1,23 @@
 <template>
     <section class="pa-5">
         <h2 class="text-h2 test text-center">研究動機</h2>
-        <h3 class="text-h4 text-center mb-5">從"威利在哪裡"為開端的研究</h3>
-        <div class="mb-4">
-            <img class="mx-auto" src="@/assets/imgs/motivation/motivation.png">
-            <p class="mt-2 text-center">
-                這位是威力
-            </p>
-        </div>
-        <div class="mb-4">
-            <img class="mx-auto" src="@/assets/imgs/motivation/motivation2.png">
-            <p class="mt-2 text-center">
-                Task:
-                找到威力在右圖的位置。
-            </p>
-        </div>
-        <div class="mb-4">
-            <img class="mx-auto" src="@/assets/imgs/motivation/motivation3.png">
-            <p class="mt-2 text-center">
-                舉個較不極端的例子: 我們可以很容易的對照左圖來選出右邊是哪種動物
-            </p>
-        </div>
+        <v-row justify="center">
+            <v-col cols="12" md="6">
+                <p>
+                    一開始踏入機器學習，最先接觸的是搭載卷積神經網路的分類器，用以分類貓與狗的區別，當時的資料集即便有一千餘筆，模型還是不能很準確的指出一張圖片裡究竟是狗或是貓，既然深度學習旨在模仿動物大腦的神經結構，那麼為什麼我們設計的深度網路模型卻無法完成像這樣對人類來說易如反掌的事情呢？這個問題成為了一顆小小的種子，埋在我的內心深處。
+                </p>
+                <p>在接觸機器學習一段時日之後，接觸到了YOLO，RCNN等監督式模型，在使用這些模型前需要使用大量的人力與時間成本來對資料集做標記，明明YOLO與RCNN的bounding效果這麼好，但我們卻需要用這麼笨的方式來對樣本進行標記，小小的種子開始萌芽，我開始去探討為什麼機器學習總是需要大量的資料對task做fitting，並積極地尋找解決方法。
+                </p>
+                <p> 小樣本學習的實現方向有很多，包括資料擴增，改變建模目標，令模型掌握核心知識等等，這邊僅對改變建模目標做討論，傳統機器學習是讓模型尋找輸入與輸出之間的關係，小樣本學習則改變學習方向令模型去尋找高維空間的向量相似度，讓模型可以更簡單的得到我們想要的結果。
+                </p>
+            </v-col>
+        </v-row>
+        
 
     </section>
 </template>
 <style lang="scss">
-h2{
+h2 {
     color: $primary;
 }
 </style>

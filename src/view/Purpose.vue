@@ -1,39 +1,17 @@
 <template>
     <section class="Purpose pa-5">
         <h2 class="text-h2 test text-center">研究目的</h2>
-        <h3 class="text-h4 text-center mb-5">
-            使模型能夠以少量的樣本fit任務<br>
-            藉此改善人工標註的工作量<br>
-            在資料競爭的時代裡減少資料飢餓
-        </h3>
-        <v-row justify="center" class="mb-4">
-            <v-col cols="12">
-                <img class="mx-auto" src="@/assets/imgs/purpose/Purpose.png">
-            </v-col>
-            <v-col cols="12" md="4">
-                <p class="text-center">
-                    在傳統的產線中通常是由人工來做產品瑕疵的標註與檢查。
-                <ul class="list">
-                    <li>費時</li>
-                    <li>成本高</li>
-                    <li>Human error</li>
-                </ul>
-                </p>
-            </v-col>
-        </v-row>
-        <v-row justify="center">
-            <v-col cols="12">
-                <div class="img2 mx-auto">
-                    <img src="@/assets/imgs/purpose/Purpose2.png">
-                </div>
-            </v-col>
-            <v-col cols="12" md="4">
-                <p class="text-center">
-                    以機器學習模型對成品做瑕疵檢測，但仍需要大量人工標註資料來訓練。
-                </p>
-            </v-col>
-        </v-row>
 
+        <v-row justify="center">
+            <v-col cols="12" md="6">
+                <p>
+                    若模型可以用更少的資料達成目標，那麼機器學習將無所不能，此研究的目的是試驗以特徵向量相似度比對的方式是否能夠得到好的效能，進而減少各種task中人工標注樣本可能發生的問題，而且可以降低非常多人工和時間成本，例如降低工廠人工標記產品瑕疵的成本與人為失誤
+                    (圖一) ，如果建模不需要大量資料，將使各個行業更願意將傳統只能由人工完成的辨識性工作交由深度學習模型完成。
+                </p>
+                <img src="@/assets/imgs/purpose/Purpose2.png">
+                <p class="text-center">圖1. 需要以大量人力收集資料來訓練傳統機器學習模型</p>
+            </v-col>
+        </v-row>
     </section>
 </template>
 <style lang="scss">

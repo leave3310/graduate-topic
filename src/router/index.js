@@ -17,6 +17,11 @@ let routes = [
     component: Index
   },
   {
+    path: '/introduce',
+    name: 'introduce',
+    component: Introduce
+  },
+  {
     path: '/motivation',
     name: 'motivation',
     component: Motivation
@@ -31,11 +36,7 @@ let routes = [
     name: 'content',
     component: Content
   },
-  {
-    path: '/introduce',
-    name: 'introduce',
-    component: Introduce
-  },
+  
   {
     path: '/environment',
     name: 'environment',
