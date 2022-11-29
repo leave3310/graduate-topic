@@ -20,6 +20,11 @@ p {
     margin-bottom: 20px;
     font-size: 20px;
 }
+ul,ol {
+    color: $primary-darken-1;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
 
 h2 {
     color: $secondary-darken-1 !important;

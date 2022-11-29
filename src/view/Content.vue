@@ -20,7 +20,6 @@
                 <p class="text-center">圖3. 分類器的內部架構</p>
             </v-col>
         </v-row>
-
         <v-row justify="center" class="mb-4">
             <v-col cols="12" md="6">
                 <h3 class="text-h4 mb-2">4.2 特徵向量投影與餘弦相似度比較</h3>
@@ -97,169 +96,64 @@
                 </ol>
             </v-col>
         </v-row>
-
-        <v-row justify="center" align="center" class="mb-4">
-            <v-col cols="12" md="4">
-                <div class="img2 mx-auto">
-                    <img src="@/assets/imgs/content/content3.png">
-                </div>
-            </v-col>
-            <v-col cols="2" md="1" class="arrow">
-                <img class="arrow" src="@/assets/imgs/arrow.png">
-            </v-col>
-            <v-col cols="12" md="2">
-                <div class="img2 mx-auto">
-                    <img class="mx-auto" src="@/assets/imgs/content/content3_1.png">
-                </div>
-            </v-col>
-        </v-row>
-        <v-row justify="center">
-            <v-col cols="12" md="4">
-                <p class="text-center">
-                    我們能夠把一個輸入樣本視為一個向量。
-                </p>
-            </v-col>
-        </v-row>
-        <v-row justify="center" align="center" class="mb-4">
-            <v-col cols="12" md="4">
-                <div class="img2 mx-auto">
-                    <img src="@/assets/imgs/content/content4.png">
-                </div>
-            </v-col>
-            <v-col cols="2" md="1" class="arrow">
-                <img class="arrow" src="@/assets/imgs/arrow.png">
-            </v-col>
-            <v-col cols="12" md="4">
-                <div class="img2 mx-auto">
-                    <img src="@/assets/imgs/content/content4_1.png">
-                </div>
-            </v-col>
-            <v-col cols="12" md="4">
-                <p class="text-center">
-                    經過特徵提取器的樣本也能當作一個向量。
-                </p>
-            </v-col>
-        </v-row>
-        <v-row justify="center" align="center" class="mb-4">
-            <v-col cols="12" md="4">
-                <div class="img2 mx-auto">
-                    <img src="@/assets/imgs/content/content5.png">
-                </div>
-            </v-col>
-            <v-col justify="center" cols="12" md="4">
-                <p class="text-center">
-                    令<br>
-                    support_vec = A向量<br>
-                    feature_vec = B向量<br>
-                    代入下式：
-                </p>
-                <img class="mx-auto" src="@/assets/imgs/content/content5_1.png">
-            </v-col>
-        </v-row>
-        <h4>特徵向量投影</h4>
-        <v-row justify="center" align="center" class="mb-4">
-            <v-col cols="12">
-                <div class="img2 mx-auto">
-                    <img src="@/assets/imgs/content/content6.png">
-                </div>
-            </v-col>
-            <v-col cols="12" class="text-center">
-                <p>
-                    定義一個向量空間S，v為樣本向量e經過P_model的預測結果(include_top=False)。
-                </p>
-            </v-col>
-
-        </v-row>
-        <v-row justify="center" align="center" class="mb-4">
-            <v-col cols="12">
-                <div class="img2 mx-auto">
-                    <img src="@/assets/imgs/content/content7.png">
-                </div>
-            </v-col>
-            <v-col cols="12" class="text-center">
-                <p>
-                    將我們持有的小量具標籤的data投影到S中，得到support vector。
-                </p>
-            </v-col>
-        </v-row>
-        <v-row justify="center" align="center" class="mb-4">
-            <v-col cols="12">
-                <div class="img2 mx-auto">
-                    <img src="@/assets/imgs/content/content8.png">
-                </div>
-            </v-col>
-            <v-col cols="12">
-                <div class="img2 mx-auto">
-                    <img src="@/assets/imgs/content/content9.png">
-                </div>
-            </v-col>
-        </v-row>
-        <v-row justify="center" align="center" class="mb-4">
-            <v-col cols="12" md="3">
-                <div class="img2 ">
-                    <img class="mx-auto" src="@/assets/imgs/content/content10.png">
-                </div>
-            </v-col>
-            <v-col cols="12" md="4">
-                <div class="img2 mx-auto">
-                    <img src="@/assets/imgs/content/content10_1.png">
-                </div>
-            </v-col>
-            <v-col cols="12" class="text-center">
-                <p>
-                    對其做歸一化，目的是為了使網路只考慮方向而不考慮長度。<br>
-                    將歸一化後的網路除以其標準差完成標準化，<br>
-                    標準化後的向量空間對離散程度的運算是有益的。
-                </p>
-            </v-col>
-        </v-row>
-        <v-row justify="center" align="center" class="mb-4">
-            <v-col cols="12" md="4">
-                <div class="img2 mx-auto">
-                    <img src="@/assets/imgs/content/content11.png">
-                </div>
-            </v-col>
+        <v-row justify="center" class="mb-4">
             <v-col cols="12" md="6">
-                <div class="img2 mx-auto mb-2">
-                    <img src="@/assets/imgs/content/content11_1.png">
-                </div>
-                <div class="img2 mx-auto">
-                    <img src="@/assets/imgs/content/content11_2.png">
-                </div>
-            </v-col>
-        </v-row>
-        <h4>預訓練模型架構</h4>
-        <v-row justify="center" align="center" class="mb-4">
-            <v-col cols="12" md="4">
-                <div class="img2 mx-auto">
-                    <img class="mx-auto" src="@/assets/imgs/content/content12.png">
-                </div>
-            </v-col>
-
-            <v-col cols="12" md="4">
-                <div class="img2 mx-auto">
-                    <img class="mx-auto" src="@/assets/imgs/content/content12_1.png">
-                </div>
-            </v-col>
-        </v-row>
-        <v-row class="justify-center">
-            <v-col cols="12" md="4">
-                <p class="text-center">
-                    採用Resnet殘差網路作為p_model，
-                    因為其架構簡單且訓練容易。
+                <h3 class="text-h4 mb-2">4.3 預訓練模型導入</h3>
+                <p>
+                    在此實務中，我們的預訓練模型是可以隨意更換的，實驗過程中我們是用了各種在ImageNet裡表現優異的經典模型，包括VGG16，Resnet，Dense等等。
+                </p>
+                <p>
+                    最終我們選用了Resnet殘差網路作為p_model，其在tensorflow底下的keras提供的函式庫中可以下載已經包含了在ImageNet中訓練的權重的模型，所以它能在不經過任何訓練下把特徵給提取出來。
+                </p>
+                <p>
+                    選用Resnet作為預訓練模型的原因是因為其架構解釋性高且由於其架構的特性使它在訓練上不會太過困難，同時能夠避免因為網路或輸入太複雜造成梯度爆炸或梯度損失的情形。
+                </p>
+                <p>
+                    Resnet網路架構如下 (圖8)，其組合了多個層使其成為網路最小單位block，特徵提取方法仍使用捲積方法對圖像提取特徵值，只是其增加這些block的數量來使網路效能提升。
+                </p>
+                <img class="mx-auto" src="@/assets/imgs/content/content4.png">
+                <p class="text-center">圖8. Resnet的架構簡化圖</p>
+                <p>
+                    但一味地增加網路深度反而會使模型效能降低，這個現象被稱為退化，Resnet就是為了改善這個退化情形才被研發出來，又稱為殘差學習。
+                </p>
+                <p>
+                    殘差網路的基本原理就是當網路發生退化時，淺層網路的表現應該比深層網路的表現更好，也就是說，讓網路在進行預測時也考慮前面各層網路的輸出，讓深度網路表現的不至於得比淺層網路差，圖8表示了深層網路怎麼考慮前面層的輸出，一般來說需要使用1x1的捲積層對向量做升維或降維，但由於此專題的主題並不是在討論此模型，所以這邊就簡化表示並大致介紹其算法。
                 </p>
             </v-col>
         </v-row>
-        <v-row justify="center" align="center" class="mb-4">
-            <v-col cols="12" md="4">
-                <div class="img2 mx-auto">
-                    <img class="mx-auto" src="@/assets/imgs/content/content13.png">
-                </div>
-            </v-col>
-            <v-col cols="12" md="4">
-                <div class="img3 mx-auto">
-                    <img class="mx-auto" src="@/assets/imgs/content/content13_1.png">
-                </div>
+        <v-row justify="center" class="mb-4">
+            <v-col cols="12" md="6">
+                <h3 class="text-h4 mb-2">4.4 未來應用方向</h3>
+                <p>
+                    經過剛剛一連串的操作，我們已經將建模目標改為尋找特徵向量之間的相似度，甚至不用經過訓練模型就有一定程度的擬合能力，用這樣的算法讓模型可以完成較簡單的預訓練分類任務 (圖9)。
+                </p>
+                
+                <img class="mx-auto" src="@/assets/imgs/content/content5.png">
+                <p class="text-center">圖9. 傳統機器學習與此模型的比較。</p>
+                <p>
+                    可以應用的方面非常多，包括：
+                </p>
+                <ul>
+                    <li>
+                        改善醫學影像分類：
+                        <p>
+                            由於醫學影像資料非常稀少，難以使用傳統機器學習模型擬合，藉由計算餘弦相似度的方式可以大幅改善模型效能。
+                        </p>
+                    </li>
+                    <li>
+                        產線瑕疵分類：
+                        <p>
+                            在研究目的有提到工廠瑕疵樣本非常稀少，藉由計算餘弦相似度的方式可以讓模型從稀少的瑕疵樣本裡找到其具代表性的特徵向量，最終讓模型簡單的完成任務的擬合。
+                        </p>
+                    </li>
+                    <li>
+                        減少人工標註成本：
+                        <p>
+                            在這個模型架構裡support set的資料數量與模型效能幾乎呈指數關係，也就是說每一個類別中的樣本數量越多，則效能會更好，人工標註也就變得更輕鬆，以往可能需要幾千到幾萬張樣本才能很好的擬合一個任務，若用這種尋找餘弦相似度的方式可以減少人工標註樣本的數量。
+                        </p>
+                    </li>
+                    
+                </ul>
             </v-col>
         </v-row>
     </section>

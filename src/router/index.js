@@ -1,14 +1,12 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
+
 import Index from '@/view/index.vue'
 import Introduce from '@/view/Introduce.vue'
-import Environment from '@/view/Environment.vue'
-import ModelChoice from '@/view/ModelChoice.vue'
-import ModelStructure from '@/view/ModelStructure.vue'
-import UnComplete from '@/view/UnComplete.vue'
-
 import Motivation from '@/view/Motivation.vue';
 import Purpose from '@/view/Purpose.vue'
 import Content from '@/view/Content.vue'
+import Result from '@/view/Result.vue'
+import Summarize from '@/view/Summarize.vue'
 
 let routes = [
   {
@@ -36,27 +34,16 @@ let routes = [
     name: 'content',
     component: Content
   },
-  
   {
-    path: '/environment',
-    name: 'environment',
-    component: Environment
+    path: '/result',
+    name: 'result',
+    component: Result
   },
   {
-    path: '/modelChoice',
-    name: 'modelChoice',
-    component: ModelChoice
+    path: '/summarize',
+    name: 'summarize',
+    component: Summarize
   },
-  {
-    path: '/modelStructure',
-    name: 'modelStructure',
-    component: ModelStructure
-  },
-  {
-    path: '/unComplete',
-    name: 'unComplete',
-    component: UnComplete
-  }
 ]
 
 export default createRouter({

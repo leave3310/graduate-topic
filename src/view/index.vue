@@ -1,6 +1,6 @@
 <template>
     <section class="pa-5">
-        <h2 class="text-h2 text-center">～歡迎來到蘭花辨識的專題～</h2>
+        <h2 class="text-h2 text-center">～歡迎來到以預訓練模型結合餘弦相似度擬合小樣本問題專題～</h2>
         <v-row justify="center">
             <v-col cols="12" md="6">
                 <p>

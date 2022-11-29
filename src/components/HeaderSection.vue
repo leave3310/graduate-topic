@@ -12,13 +12,11 @@
     <v-navigation-drawer v-model="isOpenDrawer" temporary>
         <v-list density="compact" nav>
             <v-list-item to="/introduce" prepend-icon="mdi-view-dashboard" title="緒論" value="緒論"></v-list-item>
-            <v-list-item to="/motivation" prepend-icon="mdi-view-dashboard" title="研究動機" value="研究動機"></v-list-item>
-            <v-list-item to="/purpose" prepend-icon="mdi-view-dashboard" title="研究目的" value="研究目的"></v-list-item>
-            <v-list-item to="/content" prepend-icon="mdi-view-dashboard" title="技術內容" value="技術內容"></v-list-item>
-            <!-- <v-list-item to="/environment" prepend-icon="mdi-cellphone-link" title="使用環境" value="使用環境"></v-list-item>
-            <v-list-item to="/modelChoice" prepend-icon="mdi-database-edit-outline" title="模型選擇" value="模型選擇"></v-list-item>
-            <v-list-item to="/modelStructure" prepend-icon="mdi-feature-search-outline" title="模型架構" value="模型架構"></v-list-item>
-            <v-list-item to="/unComplete" prepend-icon="mdi-clipboard-list-outline" title="未完成的優化" value="未完成的優化"></v-list-item> -->
+            <v-list-item to="/motivation" prepend-icon="mdi-head-lightbulb" title="研究動機" value="研究動機"></v-list-item>
+            <v-list-item to="/purpose" prepend-icon="mdi-account-search-outline" title="研究目的" value="研究目的"></v-list-item>
+            <v-list-item to="/content" prepend-icon="mdi-file-outline" title="技術內容" value="技術內容"></v-list-item>
+            <v-list-item to="/result" prepend-icon="mdi-map-check" title="研究成果" value="研究成果"></v-list-item>
+            <v-list-item to="/summarize" prepend-icon="mdi-sigma" title="總結" value="總結"></v-list-item>
         </v-list>
     </v-navigation-drawer>
 </template>
