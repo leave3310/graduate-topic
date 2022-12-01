@@ -17,6 +17,7 @@
             <v-list-item to="/content" prepend-icon="mdi-file-outline" title="技術內容" value="技術內容"></v-list-item>
             <v-list-item to="/result" prepend-icon="mdi-map-check" title="研究成果" value="研究成果"></v-list-item>
             <v-list-item to="/summarize" prepend-icon="mdi-sigma" title="總結" value="總結"></v-list-item>
+            <v-list-item to="/reference" prepend-icon="mdi-sigma" title="參考資料" value="參考資料"></v-list-item>
         </v-list>
     </v-navigation-drawer>
 </template>

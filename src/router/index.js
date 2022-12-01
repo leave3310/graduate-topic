@@ -7,7 +7,7 @@ import Purpose from '@/view/Purpose.vue'
 import Content from '@/view/Content.vue'
 import Result from '@/view/Result.vue'
 import Summarize from '@/view/Summarize.vue'
-
+import Reference from '@/view/Reference.vue'
 let routes = [
   {
     path: '/',
@@ -44,6 +44,11 @@ let routes = [
     name: 'summarize',
     component: Summarize
   },
+  {
+    path: '/reference',
+    name: 'Reference',
+    component: Reference
+  }
 ]
 
 export default createRouter({
